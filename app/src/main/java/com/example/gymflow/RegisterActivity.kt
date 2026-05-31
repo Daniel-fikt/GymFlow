@@ -7,16 +7,19 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var db: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
         auth = FirebaseAuth.getInstance()
+        db = FirebaseFirestore.getInstance()
 
         val email = findViewById<EditText>(R.id.etEmail)
         val password = findViewById<EditText>(R.id.etPassword)
@@ -36,6 +39,15 @@ class RegisterActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
 
                     if (task.isSuccessful) {
+
+                        val user = hashMapOf(
+                            "email" to userEmail
+                        )
+
+                        db.collection("users")
+                            .document(auth.currentUser!!.uid)
+                            .set(user)
+
                         Toast.makeText(
                             this,
                             "Account created successfully!",
@@ -44,8 +56,9 @@ class RegisterActivity : AppCompatActivity() {
 
                         startActivity(Intent(this, HomeActivity::class.java))
                         finish()
-                    }
-                     else {
+
+                    } else {
+
                         Toast.makeText(
                             this,
                             task.exception?.message,
