@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to GymFlow"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Stats"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 Calories: 1850"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💪 Workouts: 1"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💧 Water: 2.1L"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Workout"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Nutrition"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

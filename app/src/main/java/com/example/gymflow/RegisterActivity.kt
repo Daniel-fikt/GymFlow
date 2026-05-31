@@ -1,5 +1,6 @@
 package com.example.gymflow
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -40,7 +41,11 @@ class RegisterActivity : AppCompatActivity() {
                             "Account created successfully!",
                             Toast.LENGTH_SHORT
                         ).show()
-                    } else {
+
+                        startActivity(Intent(this, HomeActivity::class.java))
+                        finish()
+                    }
+                     else {
                         Toast.makeText(
                             this,
                             task.exception?.message,
