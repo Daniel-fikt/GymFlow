@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GymFlow</string>
+
+    <string name="login">Најава</string>
+    <string name="register">Регистрација</string>
+    <string name="go_to_register">Оди на регистрација</string>
+
+    <string name="email">Е-пошта</string>
+    <string name="password">Лозинка</string>
+
+    <string name="workout_plans">Планови за тренинг</string>
+    <string name="chest_workout">Гради</string>
+    <string name="back_workout">Грб</string>
+    <string name="leg_workout">Нозе</string>
+    <string name="cardio_workout">Кардио тренинг</string>
+
+    <string name="welcome">Добредојдовте во GymFlow</string>
+    <string name="calories"> Калории: 1850</string>
+    <string name="workouts"> Тренинзи: 1</string>
+    <string name="today_stats">Денешна статистика</string>
+    <string name="water"> Вода: 2.1L</string>
+    <string name="start_workout">Започни тренинг</string>
+    <string name="view_nutrition">Преглед на исхрана</string>
+</resources>

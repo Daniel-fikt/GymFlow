@@ -1,3 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">GymFlow</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="go_to_register">Go to Register</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="workout_plans">Workout Plans</string>
+    <string name="chest_workout">Chest Workout</string>
+    <string name="back_workout">Back Workout</string>
+    <string name="leg_workout">Leg Workout</string>
+    <string name="cardio_workout">Cardio Workout</string>
+
+    <string name="welcome">Welcome to GymFlow</string>
+    <string name="calories">Calories: 1850</string>
+    <string name="workouts">Workouts: 1</string>
+    <string name="today_stats">Today Stats</string>
+    <string name="water">Water: 2.1L</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="view_nutrition">View Nutrition</string>
+
 </resources>

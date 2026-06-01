@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Workout Plans"
+            android:text="@string/workout_plans"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -20,28 +20,28 @@
             android:id="@+id/btnChest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chest Workout"
+            android:text="@string/chest_workout"
             android:layout_marginTop="24dp" />
 
         <Button
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back Workout"
+            android:text="@string/back_workout"
             android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnLegs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Leg Workout"
+            android:text="@string/leg_workout"
             android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnCardio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cardio Workout"
+            android:text="@string/cardio_workout"
             android:layout_marginTop="12dp" />
 
     </LinearLayout>

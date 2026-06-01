@@ -12,35 +12,35 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to GymFlow"
+            android:text="@string/welcome"
             android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Today's Stats"
+            android:text="@string/today_stats"
             android:textSize="20sp"
             android:layout_marginTop="24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🔥 Calories: 1850"
+            android:text="@string/calories"
             android:textSize="18sp"
             android:layout_marginTop="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="💪 Workouts: 1"
+            android:text="@string/workouts"
             android:textSize="18sp"
             android:layout_marginTop="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="💧 Water: 2.1L"
+            android:text="@string/water"
             android:textSize="18sp"
             android:layout_marginTop="8dp" />
 
@@ -48,14 +48,14 @@
             android:id="@+id/btnWorkout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Start Workout"
+            android:text="@string/start_workout"
             android:layout_marginTop="24dp" />
 
         <Button
             android:id="@+id/btnNutrition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Nutrition"
+            android:text="@string/view_nutrition"
             android:layout_marginTop="12dp" />
 
     </LinearLayout>
