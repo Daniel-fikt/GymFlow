@@ -23,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
         val loginButton = findViewById<Button>(R.id.loginButton)
         val registerButton = findViewById<Button>(R.id.registerScreenButton)
+        val guestButton = findViewById<Button>(R.id.guestButton)
 
         loginButton.setOnClickListener {
 
@@ -30,32 +31,76 @@ class LoginActivity : AppCompatActivity() {
             val userPassword = password.text.toString().trim()
 
             if (userEmail.isEmpty() || userPassword.isEmpty()) {
-                Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Fill all fields",
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
 
-            auth.signInWithEmailAndPassword(userEmail, userPassword)
+            auth.signInWithEmailAndPassword(
+                userEmail,
+                userPassword
+            ).addOnCompleteListener { task ->
+
+                if (task.isSuccessful) {
+
+                    startActivity(
+                        Intent(
+                            this,
+                            HomeActivity::class.java
+                        )
+                    )
+                    finish()
+
+                } else {
+
+                    Toast.makeText(
+                        this,
+                        task.exception?.message,
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+        }
+
+        registerButton.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    RegisterActivity::class.java
+                )
+            )
+        }
+
+        guestButton.setOnClickListener {
+
+            auth.signInAnonymously()
                 .addOnCompleteListener { task ->
 
                     if (task.isSuccessful) {
+
                         startActivity(
-                            Intent(this, HomeActivity::class.java)
+                            Intent(
+                                this,
+                                HomeActivity::class.java
+                            )
                         )
                         finish()
+
                     } else {
+
                         Toast.makeText(
                             this,
-                            task.exception?.message,
+                            "Guest login failed",
                             Toast.LENGTH_LONG
                         ).show()
                     }
                 }
         }
-
-        registerButton.setOnClickListener {
-            startActivity(
-                Intent(this, RegisterActivity::class.java)
-            )
-        }
     }
+
+
 }

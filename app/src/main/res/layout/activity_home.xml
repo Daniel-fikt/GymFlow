@@ -21,37 +21,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Твоите препораки"
-            android:textSize="20sp"
-            android:layout_marginTop="24dp" />
-
-        <TextView
-            android:id="@+id/txtCalories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🔥 Препорачани калории: 2450 kcal"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp" />
-
-        <TextView
-            android:id="@+id/txtWater"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="💧 Препорачана вода: 2.5 L"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/txtWorkouts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🏋️ Тренинзи неделно: 4"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
-
-        <TextView
             android:id="@+id/txtMembership"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
