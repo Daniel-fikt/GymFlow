@@ -11,10 +11,9 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val workoutButton = findViewById<Button>(R.id.btnWorkout)
-
+        val workoutButton = findViewById<android.widget.TextView>(R.id.btnWorkout)
         workoutButton.setOnClickListener {
-            startActivity(Intent(this, WorkoutActivity::class.java))
+            startActivity(Intent(this, ProfileSetupActivity::class.java))
         }
     }
 }
