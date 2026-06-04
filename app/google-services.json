@@ -12,7 +12,20 @@
           "package_name": "com.example.gymflow"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "660132645518-o9lbbmhhagu7f8gq10tctd5ppr97i625.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymflow",
+            "certificate_hash": "279110972c24a40358ce89b0f45d6d24c350ed59"
+          }
+        },
+        {
+          "client_id": "660132645518-93g6i9p78623bfnkqe2v174535ud781h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDAAAlke2Fy1slD3i7nbuzaf2EsftHUpS8"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660132645518-93g6i9p78623bfnkqe2v174535ud781h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
