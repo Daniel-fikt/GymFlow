@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GymFlow">
         <activity
+            android:name=".NutritionActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecommendationsActivity"
             android:exported="false" />
         <activity

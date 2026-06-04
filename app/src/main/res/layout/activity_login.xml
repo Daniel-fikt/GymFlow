@@ -51,4 +51,11 @@
         android:text="Continue as Guest"
         android:layout_marginTop="12dp"/>
 
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:layout_marginTop="12dp"/>
+
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.gymflow
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -11,10 +12,13 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val workoutButton =
-            findViewById<android.widget.TextView>(R.id.btnWorkout)
+            findViewById<TextView>(R.id.btnWorkout)
 
         val recommendationsButton =
-            findViewById<android.widget.TextView>(R.id.btnRecommendations)
+            findViewById<TextView>(R.id.btnRecommendations)
+
+        val nutritionButton =
+            findViewById<TextView>(R.id.btnNutrition)
 
         workoutButton.setOnClickListener {
             startActivity(
@@ -30,6 +34,15 @@ class HomeActivity : AppCompatActivity() {
                 Intent(
                     this,
                     RecommendationsActivity::class.java
+                )
+            )
+        }
+
+        nutritionButton.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    NutritionActivity::class.java
                 )
             )
         }
