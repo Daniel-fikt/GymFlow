@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GymFlow">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardioWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShouldersWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArmsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChestWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".NutritionActivity"
             android:exported="false" />
         <activity

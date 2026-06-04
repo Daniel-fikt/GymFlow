@@ -17,9 +17,9 @@ class ProfileSetupActivity : AppCompatActivity() {
         val weightEditText = findViewById<EditText>(R.id.etWeight)
         val heightEditText = findViewById<EditText>(R.id.etHeight)
 
-        val continueButton = findViewById<Button>(R.id.btnContinue)
+        val saveButton = findViewById<Button>(R.id.btnContinue)
 
-        continueButton.setOnClickListener {
+        saveButton.setOnClickListener {
 
             val age = ageEditText.text.toString()
             val weight = weightEditText.text.toString()
@@ -47,10 +47,16 @@ class ProfileSetupActivity : AppCompatActivity() {
                 .putFloat("height", height.toFloat())
                 .apply()
 
+            Toast.makeText(
+                this,
+                "Profile saved successfully",
+                Toast.LENGTH_SHORT
+            ).show()
+
             startActivity(
                 Intent(
                     this,
-                    WorkoutActivity::class.java
+                    HomeActivity::class.java
                 )
             )
 

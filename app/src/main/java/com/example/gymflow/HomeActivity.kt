@@ -20,11 +20,20 @@ class HomeActivity : AppCompatActivity() {
         val nutritionButton =
             findViewById<TextView>(R.id.btnNutrition)
 
+        val profileButton =
+            findViewById<TextView>(R.id.btnProfile)
+
+        val membershipButton =
+            findViewById<TextView>(R.id.btnMembership)
+
+        val settingsButton =
+            findViewById<TextView>(R.id.btnSettings)
+
         workoutButton.setOnClickListener {
             startActivity(
                 Intent(
                     this,
-                    ProfileSetupActivity::class.java
+                    WorkoutActivity::class.java
                 )
             )
         }
@@ -43,6 +52,33 @@ class HomeActivity : AppCompatActivity() {
                 Intent(
                     this,
                     NutritionActivity::class.java
+                )
+            )
+        }
+
+        profileButton.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    ProfileActivity::class.java
+                )
+            )
+        }
+
+        membershipButton.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    MembershipActivity::class.java
+                )
+            )
+        }
+
+        settingsButton.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    SettingsActivity::class.java
                 )
             )
         }
