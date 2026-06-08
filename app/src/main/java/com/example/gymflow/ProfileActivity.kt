@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.gymflow.data.local.AppDatabase
+import kotlinx.coroutines.launch
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -20,26 +23,43 @@ class ProfileActivity : AppCompatActivity() {
         val editButton = findViewById<Button>(R.id.btnEditProfile)
         val backButton = findViewById<Button>(R.id.btnBack)
 
-        val prefs = getSharedPreferences(
-            "GymFlowPrefs",
-            MODE_PRIVATE
-        )
+        lifecycleScope.launch {
 
-        val age = prefs.getInt("age", 0)
-        val weight = prefs.getFloat("weight", 0f)
-        val height = prefs.getFloat("height", 0f)
+            val profile = AppDatabase
+                .getDatabase(this@ProfileActivity)
+                .userProfileDao()
+                .getLastProfile()
 
-        val bmi =
-            if (height > 0f) {
-                weight / ((height / 100f) * (height / 100f))
-            } else {
-                0f
+            profile?.let {
+
+                val bmi =
+                    if (it.height > 0f) {
+                        it.weight / ((it.height / 100f) * (it.height / 100f))
+                    } else {
+                        0f
+                    }
+
+                txtAge.text = getString(
+                    R.string.age_value,
+                    it.age
+                )
+
+                txtWeight.text = getString(
+                    R.string.weight_value,
+                    it.weight
+                )
+
+                txtHeight.text = getString(
+                    R.string.height_value,
+                    it.height
+                )
+
+                txtBmi.text = getString(
+                    R.string.bmi_value,
+                    bmi
+                )
             }
-
-        txtAge.text = getString(R.string.age_value, age)
-        txtWeight.text = getString(R.string.weight_value, weight)
-        txtHeight.text = getString(R.string.height_value, height)
-        txtBmi.text = getString(R.string.bmi_value, bmi)
+        }
 
         editButton.setOnClickListener {
             startActivity(

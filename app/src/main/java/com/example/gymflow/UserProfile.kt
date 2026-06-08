@@ -1,4 +1,5 @@
 package com.example.gymflow
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -9,8 +10,6 @@ data class UserProfile(
     val id: Int = 0,
 
     val age: Int,
-
     val weight: Float,
-
     val height: Float
 )

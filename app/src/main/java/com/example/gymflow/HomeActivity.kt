@@ -78,12 +78,8 @@ class HomeActivity : AppCompatActivity() {
 
                     analytics.logEvent("open_workout", null)
 
-                    startActivity(
-                        Intent(
-                            this,
-                            WorkoutActivity::class.java
-                        )
-                    )
+
+
                 }
 
                 recommendationsButton.setOnClickListener {

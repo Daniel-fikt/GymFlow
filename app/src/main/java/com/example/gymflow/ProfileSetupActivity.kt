@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.gymflow.data.local.AppDatabase
+import kotlinx.coroutines.launch
 
 class ProfileSetupActivity : AppCompatActivity() {
 
@@ -40,12 +43,24 @@ class ProfileSetupActivity : AppCompatActivity() {
                 "GymFlowPrefs",
                 MODE_PRIVATE
             )
-
             prefs.edit()
                 .putInt("age", age.toInt())
                 .putFloat("weight", weight.toFloat())
                 .putFloat("height", height.toFloat())
                 .apply()
+            lifecycleScope.launch {
+
+                val profile = UserProfile(
+                    age = age.toInt(),
+                    weight = weight.toFloat(),
+                    height = height.toFloat()
+                )
+
+                AppDatabase
+                    .getDatabase(this@ProfileSetupActivity)
+                    .userProfileDao()
+                    .insertProfile(profile)
+            }
 
             Toast.makeText(
                 this,
