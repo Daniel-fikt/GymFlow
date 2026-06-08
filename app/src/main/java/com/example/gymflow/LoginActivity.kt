@@ -7,15 +7,27 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.facebook.FacebookSdk
+import com.facebook.appevents.AppEventsLogger
+
+import com.facebook.CallbackManager
+import com.facebook.FacebookCallback
+import com.facebook.FacebookException
+import com.facebook.login.LoginManager
+import com.facebook.login.LoginResult
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+
+import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var callbackManager: CallbackManager
 
     private val googleSignInLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -23,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
             val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
 
             try {
-
                 val account = task.getResult(ApiException::class.java)
 
                 val credential = GoogleAuthProvider.getCredential(
@@ -66,9 +77,15 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        FacebookSdk.sdkInitialize(applicationContext)
+        AppEventsLogger.activateApp(application)
+
         setContentView(R.layout.activity_login)
 
         auth = FirebaseAuth.getInstance()
+        callbackManager = CallbackManager.Factory.create()
+
 
         val email = findViewById<EditText>(R.id.emailEditText)
         val password = findViewById<EditText>(R.id.passwordEditText)
@@ -77,7 +94,51 @@ class LoginActivity : AppCompatActivity() {
         val registerButton = findViewById<Button>(R.id.registerScreenButton)
         val guestButton = findViewById<Button>(R.id.guestButton)
         val googleButton = findViewById<Button>(R.id.googleLoginButton)
+        val facebookButton = findViewById<Button>(R.id.facebookLoginButton)
 
+        // FACEBOOK CALLBACK
+        LoginManager.getInstance().registerCallback(
+            callbackManager,
+            object : FacebookCallback<LoginResult> {
+
+                override fun onSuccess(result: LoginResult) {
+
+                    val credential =
+                        FacebookAuthProvider.getCredential(
+                            result.accessToken.token
+                        )
+
+                    auth.signInWithCredential(credential)
+                        .addOnCompleteListener { task ->
+
+                            if (task.isSuccessful) {
+
+                                startActivity(
+                                    Intent(
+                                        this@LoginActivity,
+                                        HomeActivity::class.java
+                                    )
+                                )
+
+                                finish()
+                            }
+                        }
+                }
+
+                override fun onCancel() {}
+
+                override fun onError(error: FacebookException) {
+
+                    Toast.makeText(
+                        this@LoginActivity,
+                        error.message,
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+        )
+
+        // EMAIL LOGIN
         loginButton.setOnClickListener {
 
             val userEmail = email.text.toString().trim()
@@ -121,6 +182,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        // REGISTER
         registerButton.setOnClickListener {
 
             startActivity(
@@ -131,6 +193,7 @@ class LoginActivity : AppCompatActivity() {
             )
         }
 
+        // GUEST
         guestButton.setOnClickListener {
 
             auth.signInAnonymously()
@@ -158,6 +221,7 @@ class LoginActivity : AppCompatActivity() {
                 }
         }
 
+        // GOOGLE
         googleButton.setOnClickListener {
 
             val gso = GoogleSignInOptions.Builder(
@@ -176,5 +240,33 @@ class LoginActivity : AppCompatActivity() {
                 googleSignInClient.signInIntent
             )
         }
+
+        // FACEBOOK
+        facebookButton.setOnClickListener {
+
+            LoginManager.getInstance()
+                .logInWithReadPermissions(
+                    this,
+                    listOf("email", "public_profile")
+                )
+        }
+    }
+
+    override fun onActivityResult(
+        requestCode: Int,
+        resultCode: Int,
+        data: Intent?
+    ) {
+        super.onActivityResult(
+            requestCode,
+            resultCode,
+            data
+        )
+
+        callbackManager.onActivityResult(
+            requestCode,
+            resultCode,
+            data
+        )
     }
 }

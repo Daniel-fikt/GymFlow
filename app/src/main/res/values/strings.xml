@@ -194,4 +194,7 @@
     <string name="recommended_calories">🔥 Recommended Calories: %1$d kcal</string>
     <string name="recommended_water">💧 Recommended Water: %1$s L</string>
     <string name="recommended_workouts">🏋️ Recommended Workouts: %1$d per week</string>
+    <string name="facebook_app_id">979510961645165</string>
+    <string name="fb_login_protocol_scheme">fb979510961645165</string>
+    <string name="facebook_client_token">bdf3ff4fcff007d4dbdd1eba8dd42940</string>
 </resources>

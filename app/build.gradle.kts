@@ -53,8 +53,8 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-messaging")
-
     implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation("com.facebook.android:facebook-login:18.0.2")
 
     // ROOM
     // implementation("androidx.room:room-runtime:2.7.2")
