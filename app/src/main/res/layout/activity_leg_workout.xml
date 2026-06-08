@@ -1,66 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gymflow_logo"
+            android:scaleType="fitCenter" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🦵 Legs Workout"
-            android:textSize="30sp"
+            android:text="LEGS WORKOUT"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🏋️ Difficulty: Hard"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp" />
+            android:text="Build Power and Strong Legs"
+            android:textColor="#FFC107"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⏱ Duration: 55 min"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="@string/legs_difficulty"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🔥 Calories: ~350 kcal"
+            android:text="@string/legs_duration"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legs_calories"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🦵 Squats"
+                    android:text="@string/legs_ex1"
+                    android:textColor="#FFC107"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4 Sets × 10 Reps" />
+                    android:text="@string/legs_ex1_sets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -69,25 +96,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🦵 Leg Press"
+                    android:text="@string/legs_ex2"
+                    android:textColor="#FFC107"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3 Sets × 12 Reps" />
+                    android:text="@string/legs_ex2_sets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -96,25 +130,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🔥 Lunges"
+                    android:text="@string/legs_ex3"
+                    android:textColor="#FFC107"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3 Sets × 12 Reps" />
+                    android:text="@string/legs_ex3_sets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -123,25 +164,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🏋️ Calf Raises"
+                    android:text="@string/legs_ex4"
+                    android:textColor="#FFC107"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4 Sets × 15 Reps" />
+                    android:text="@string/legs_ex4_sets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -149,9 +197,12 @@
         <Button
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="⬅️ Back"
-            android:layout_marginTop="12dp" />
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#FFC107" />
 
     </LinearLayout>
 

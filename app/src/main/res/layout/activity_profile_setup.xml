@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Profile Setup"
+            android:text="@string/profile_setup"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -20,7 +20,7 @@
             android:id="@+id/etAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Age"
+            android:hint="@string/age_hint"
             android:inputType="number"
             android:layout_marginTop="20dp" />
 
@@ -28,7 +28,7 @@
             android:id="@+id/etWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Weight (kg)"
+            android:hint="@string/weight_hint"
             android:inputType="numberDecimal"
             android:layout_marginTop="12dp" />
 
@@ -36,7 +36,7 @@
             android:id="@+id/etHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Height (cm)"
+            android:hint="@string/height_hint"
             android:inputType="numberDecimal"
             android:layout_marginTop="12dp" />
 
@@ -44,7 +44,7 @@
             android:id="@+id/btnContinue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💾 Зачувај"
+            android:text="@string/save_profile"
             android:layout_marginTop="12dp" />
 
     </LinearLayout>

@@ -3,127 +3,163 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/gymflow_logo"
+            android:scaleType="fitCenter" />
 
         <TextView
             android:id="@+id/txtWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Добредојде Daniel 👋"
+            android:text="@string/welcome_user"
+            android:textColor="#FFFFFF"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/txtMembership"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="✅ Членарина активна"
+            android:text="@string/membership_active"
+            android:textColor="#FFC107"
             android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="24dp"
-            app:cardCornerRadius="20dp">
+            android:layout_height="90dp"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnWorkout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="🏋️ Започни тренинг"
+                android:text="💪 WORKOUT"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="20dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnRecommendations"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="📊 Мои препораки"
+                android:text="🎯 RECOMMENDATIONS"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="20dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnNutrition"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="🍎 Исхрана"
+                android:text="🍎 NUTRITION"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="20dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnMembership"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="✅ Членарина"
+                android:text="⭐ MEMBERSHIP"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="20dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnProfile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="👤 Мој профил"
+                android:text="👤 PROFILE"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="20dp">
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <TextView
                 android:id="@+id/btnSettings"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="⚙️ Поставки"
+                android:text="⚙️ SETTINGS"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
-    ```
 
 </ScrollView>

@@ -21,4 +21,176 @@
     <string name="water"> Вода: 2.1L</string>
     <string name="start_workout">Започни тренинг</string>
     <string name="view_nutrition">Преглед на исхрана</string>
+    <string name="membership">Членарина</string>
+    <string name="settings">Поставки</string>
+    <string name="profile">Мој профил</string>
+    <string name="nutrition">Исхрана</string>
+    <string name="recommendations">Мои препораки</string>
+    <string name="logout">Одјава</string>
+    <string name="language">Јазик</string>
+    <string name="notifications">Известувања</string>
+    <string name="back">Назад</string>
+    <string name="active">Активна</string>
+    <string name="expired">Истечена</string>
+    <string name="home_workout">🏋️ Започни тренинг</string>
+    <string name="home_recommendations">📊 Мои препораки</string>
+    <string name="home_nutrition">🍎 Исхрана</string>
+    <string name="home_membership">✅ Членарина</string>
+    <string name="home_profile">👤 Мој профил</string>
+    <string name="home_settings">⚙️ Поставки</string>
+
+    <string name="welcome_user">Добредојде Daniel 👋</string>
+    <string name="membership_active">✅ Членарина активна</string>
+    <string name="settings_title">⚙️ Поставки</string>
+
+    <string name="language_title">🌐 Јазик</string>
+    <string name="language_value">Македонски</string>
+
+    <string name="notifications_title">🔔 Известувања</string>
+    <string name="notifications_enabled">Вклучени</string>
+
+    <string name="logout_button">🚪 Одјава</string>
+    <string name="back_button">⬅️ Назад</string>
+    <string name="membership_title">💳 Членарина</string>
+    <string name="membership_details">🏆 Детали за членарина</string>
+
+    <string name="status_title">✅ Статус</string>
+    <string name="status_active">Активна</string>
+
+    <string name="start_date_title">📅 Датум на почеток</string>
+    <string name="expiry_date_title">⏳ Датум на истекување</string>
+
+    <string name="membership_level_title">🏅 Ниво на членарина</string>
+    <string name="membership_level_standard">Стандардна</string>
+    <string name="nutrition_title">🥗 Исхрана</string>
+
+    <string name="breakfast_title">🍳 Појадок</string>
+    <string name="breakfast_food">• Овесни снегулки&#10;• Банана&#10;• Јогурт</string>
+
+    <string name="lunch_title">🍗 Ручек</string>
+    <string name="lunch_food">• Пилешко месо&#10;• Ориз&#10;• Салата</string>
+
+    <string name="snack_title">🍎 Ужина</string>
+    <string name="snack_food">• Јаболко&#10;• Бадеми</string>
+
+    <string name="dinner_title">🥩 Вечера</string>
+    <string name="dinner_food">• Туна&#10;• Зеленчук</string>
+    <string name="recommendations_title">📊 Мои препораки</string>
+
+    <string name="bmi_default">BMI: 0</string>
+    <string name="calories_default">Калории: 0</string>
+    <string name="water_default">Вода: 0</string>
+    <string name="workouts_default">Тренинзи: 0</string>
+    <string name="chest_title">💪 Тренинг за гради</string>
+    <string name="chest_difficulty">🏋️ Тежина: Средно</string>
+    <string name="chest_duration">⏱ Времетраење: 45 мин</string>
+    <string name="chest_calories">🔥 Калории: ~250 kcal</string>
+
+    <string name="chest_ex1">🏋️ Bench Press</string>
+    <string name="chest_ex1_sets">4 Серии × 10 Повторувања</string>
+
+    <string name="chest_ex2">💪 Incline Dumbbell Press</string>
+    <string name="chest_ex2_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="chest_ex3">🪽 Chest Fly</string>
+    <string name="chest_ex3_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="chest_ex4">🔥 Push Ups</string>
+    <string name="chest_ex4_sets">3 Серии × 15 Повторувања</string>
+    <string name="arms_title">💪 Тренинг за раце</string>
+    <string name="arms_difficulty">🏋️ Тежина: Средно</string>
+    <string name="arms_duration">⏱ Времетраење: 40 мин</string>
+    <string name="arms_calories">🔥 Калории: ~220 kcal</string>
+
+    <string name="arms_ex1">💪 Barbell Curl</string>
+    <string name="arms_ex1_sets">4 Серии × 10 Повторувања</string>
+
+    <string name="arms_ex2">🏋️ Hammer Curl</string>
+    <string name="arms_ex2_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="arms_ex3">🔥 Tricep Pushdown</string>
+    <string name="arms_ex3_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="arms_ex4">💥 Dips</string>
+    <string name="arms_ex4_sets">3 Серии × 15 Повторувања</string>
+    <string name="shoulders_title">🏋️ Тренинг за рамена</string>
+    <string name="shoulders_difficulty">🏋️ Тежина: Средно</string>
+    <string name="shoulders_duration">⏱ Времетраење: 45 мин</string>
+    <string name="shoulders_calories">🔥 Калории: ~240 kcal</string>
+
+    <string name="shoulders_ex1">🏋️ Shoulder Press</string>
+    <string name="shoulders_ex1_sets">4 Серии × 10 Повторувања</string>
+
+    <string name="shoulders_ex2">💪 Lateral Raises</string>
+    <string name="shoulders_ex2_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="shoulders_ex3">🔥 Front Raises</string>
+    <string name="shoulders_ex3_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="shoulders_ex4">🏋️ Rear Delt Fly</string>
+    <string name="shoulders_ex4_sets">3 Серии × 12 Повторувања</string>
+    <string name="legs_title">🦵 Тренинг за нозе</string>
+    <string name="legs_difficulty">🏋️ Тежина: Тешко</string>
+    <string name="legs_duration">⏱ Времетраење: 55 мин</string>
+    <string name="legs_calories">🔥 Калории: ~350 kcal</string>
+
+    <string name="legs_ex1">🦵 Чучњеви</string>
+    <string name="legs_ex1_sets">4 Серии × 10 Повторувања</string>
+
+    <string name="legs_ex2">🦵 Потисок со нозе</string>
+    <string name="legs_ex2_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="legs_ex3">🔥 Исчекори</string>
+    <string name="legs_ex3_sets">3 Серии × 12 Повторувања</string>
+
+    <string name="legs_ex4">🏋️ Подигнување на листови</string>
+    <string name="legs_ex4_sets">4 Серии × 15 Повторувања</string>
+
+    <string name="cardio_title">🏃 Кардио тренинг</string>
+    <string name="cardio_difficulty">🏋️ Тежина: Средно</string>
+    <string name="cardio_duration">⏱ Времетраење: 45 мин</string>
+    <string name="cardio_calories">🔥 Калории: ~400 kcal</string>
+
+    <string name="cardio_ex1">🏃 Трчање</string>
+    <string name="cardio_ex1_sets">20 Минути</string>
+
+    <string name="cardio_ex2">🚴 Возење велосипед</string>
+    <string name="cardio_ex2_sets">15 Минути</string>
+
+    <string name="cardio_ex3">🔥 Јаже</string>
+    <string name="cardio_ex3_sets">10 Минути</string>
+
+    <string name="cardio_ex4">💪 Бурпи</string>
+    <string name="cardio_ex4_sets">3 Серии × 15 Повторувања</string>
+    <string name="profile_title">👤 Мој профил</string>
+
+    <string name="age_label">Возраст:</string>
+    <string name="weight_label">Тежина:</string>
+    <string name="height_label">Висина:</string>
+    <string name="bmi_label">BMI:</string>
+    <string name="edit_profile">✏️ Измени податоци</string>
+    <string name="arms_workout">💪 Тренинг за раце</string>
+    <string name="shoulders_workout">🏋️ Тренинг за рамена</string>
+    <string name="legs_workout">🦵 Тренинг за нозе</string>
+    <string name="register_title">Регистрација</string>
+    <string name="register_button">Регистрирај се</string>
+    <string name="profile_setup">Поставување профил</string>
+    <string name="age_hint">Возраст</string>
+    <string name="weight_hint">Тежина (кг)</string>
+    <string name="height_hint">Висина (см)</string>
+    <string name="save_profile">💾 Зачувај</string>
+    <string name="google_login_failed">Неуспешна Google најава</string>
+    <string name="fill_all_fields">Пополнете ги сите полиња</string>
+    <string name="guest_login_failed">Неуспешна гостинска најава</string>
+    <string name="account_created">Профилот е успешно креиран!</string>
+    <string name="age_value">Возраст: %1$d</string>
+    <string name="weight_value">Тежина: %1$.1f kg</string>
+    <string name="height_value">Висина: %1$.1f cm</string>
+    <string name="bmi_value">BMI: %1$.1f</string>
+    <string name="profile_saved">Профилот е успешно зачуван</string>
+    <string name="recommended_bmi">📊 BMI: %1$.1f</string>
+    <string name="recommended_calories">🔥 Препорачани калории: %1$d kcal</string>
+    <string name="recommended_water">💧 Препорачана вода: %1$s L</string>
+    <string name="recommended_workouts">🏋️ Препорачани тренинзи: %1$d неделно</string>
+
 </resources>

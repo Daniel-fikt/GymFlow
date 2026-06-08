@@ -29,7 +29,7 @@ class ProfileSetupActivity : AppCompatActivity() {
 
                 Toast.makeText(
                     this,
-                    "Please fill all fields",
+                    getString(R.string.fill_all_fields),
                     Toast.LENGTH_SHORT
                 ).show()
 
@@ -49,7 +49,7 @@ class ProfileSetupActivity : AppCompatActivity() {
 
             Toast.makeText(
                 this,
-                "Profile saved successfully",
+                getString(R.string.profile_saved),
                 Toast.LENGTH_SHORT
             ).show()
 

@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
 
                             Toast.makeText(
                                 this,
-                                "Google login failed",
+                                getString(R.string.google_login_failed),
                                 Toast.LENGTH_LONG
                             ).show()
                         }
@@ -87,7 +87,7 @@ class LoginActivity : AppCompatActivity() {
 
                 Toast.makeText(
                     this,
-                    "Fill all fields",
+                    getString(R.string.fill_all_fields),
                     Toast.LENGTH_SHORT
                 ).show()
 
@@ -151,7 +151,7 @@ class LoginActivity : AppCompatActivity() {
 
                         Toast.makeText(
                             this,
-                            "Guest login failed",
+                            getString(R.string.guest_login_failed),
                             Toast.LENGTH_LONG
                         ).show()
                     }

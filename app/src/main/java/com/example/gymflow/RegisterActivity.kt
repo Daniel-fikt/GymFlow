@@ -31,7 +31,11 @@ class RegisterActivity : AppCompatActivity() {
             val userPassword = password.text.toString().trim()
 
             if (userEmail.isEmpty() || userPassword.isEmpty()) {
-                Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    getString(R.string.fill_all_fields),
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
 
@@ -50,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
 
                         Toast.makeText(
                             this,
-                            "Account created successfully!",
+                            getString(R.string.account_created),
                             Toast.LENGTH_SHORT
                         ).show()
 

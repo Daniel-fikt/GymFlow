@@ -23,5 +23,175 @@
     <string name="water">Water: 2.1L</string>
     <string name="start_workout">Start Workout</string>
     <string name="view_nutrition">View Nutrition</string>
+    <string name="membership">Membership</string>
+    <string name="settings">Settings</string>
+    <string name="profile">My Profile</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="logout">Logout</string>
+    <string name="language">Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="back">Back</string>
+    <string name="active">Active</string>
+    <string name="expired">Expired</string>
+    <string name="home_workout">🏋️ Start Workout</string>
+    <string name="home_recommendations">📊 Recommendations</string>
+    <string name="home_nutrition">🍎 Nutrition</string>
+    <string name="home_membership">✅ Membership</string>
+    <string name="home_profile">👤 My Profile</string>
+    <string name="home_settings">⚙️ Settings</string>
 
+    <string name="welcome_user">Welcome Daniel 👋</string>
+    <string name="membership_active">✅ Membership Active</string>
+    <string name="settings_title">⚙️ Settings</string>
+
+    <string name="language_title">🌐 Language</string>
+    <string name="language_value">English</string>
+
+    <string name="notifications_title">🔔 Notifications</string>
+    <string name="notifications_enabled">Enabled</string>
+
+    <string name="logout_button">🚪 Logout</string>
+    <string name="back_button">⬅️ Back</string>
+    <string name="membership_title">💳 Membership</string>
+    <string name="membership_details">🏆 Gym Membership Details</string>
+
+    <string name="status_title">✅ Status</string>
+    <string name="status_active">Active</string>
+
+    <string name="start_date_title">📅 Start Date</string>
+    <string name="expiry_date_title">⏳ Expiry Date</string>
+
+    <string name="membership_level_title">🏅 Membership Level</string>
+    <string name="membership_level_standard">Standard</string>
+    <string name="nutrition_title">🥗 Nutrition</string>
+
+    <string name="breakfast_title">🍳 Breakfast</string>
+    <string name="breakfast_food">• Oatmeal&#10;• Banana&#10;• Yogurt</string>
+
+    <string name="lunch_title">🍗 Lunch</string>
+    <string name="lunch_food">• Chicken Breast&#10;• Rice&#10;• Salad</string>
+
+    <string name="snack_title">🍎 Snack</string>
+    <string name="snack_food">• Apple&#10;• Almonds</string>
+
+    <string name="dinner_title">🥩 Dinner</string>
+    <string name="dinner_food">• Tuna&#10;• Vegetables</string>
+    <string name="recommendations_title">📊 My Recommendations</string>
+
+    <string name="bmi_default">BMI: 0</string>
+    <string name="calories_default">Calories: 0</string>
+    <string name="water_default">Water: 0</string>
+    <string name="workouts_default">Workouts: 0</string>
+    <string name="chest_title">💪 Chest Workout</string>
+    <string name="chest_difficulty">🏋️ Difficulty: Intermediate</string>
+    <string name="chest_duration">⏱ Duration: 45 min</string>
+    <string name="chest_calories">🔥 Calories: ~250 kcal</string>
+
+    <string name="chest_ex1">🏋️ Bench Press</string>
+    <string name="chest_ex1_sets">4 Sets × 10 Reps</string>
+
+    <string name="chest_ex2">💪 Incline Dumbbell Press</string>
+    <string name="chest_ex2_sets">3 Sets × 12 Reps</string>
+
+    <string name="chest_ex3">🪽 Chest Fly</string>
+    <string name="chest_ex3_sets">3 Sets × 12 Reps</string>
+
+    <string name="chest_ex4">🔥 Push Ups</string>
+    <string name="chest_ex4_sets">3 Sets × 15 Reps</string>
+    <string name="arms_title">💪 Arms Workout</string>
+    <string name="arms_difficulty">🏋️ Difficulty: Intermediate</string>
+    <string name="arms_duration">⏱ Duration: 40 min</string>
+    <string name="arms_calories">🔥 Calories: ~220 kcal</string>
+
+    <string name="arms_ex1">💪 Barbell Curl</string>
+    <string name="arms_ex1_sets">4 Sets × 10 Reps</string>
+
+    <string name="arms_ex2">🏋️ Hammer Curl</string>
+    <string name="arms_ex2_sets">3 Sets × 12 Reps</string>
+
+    <string name="arms_ex3">🔥 Tricep Pushdown</string>
+    <string name="arms_ex3_sets">3 Sets × 12 Reps</string>
+
+    <string name="arms_ex4">💥 Dips</string>
+    <string name="arms_ex4_sets">3 Sets × 15 Reps</string>
+    <string name="shoulders_title">🏋️ Shoulders Workout</string>
+    <string name="shoulders_difficulty">🏋️ Difficulty: Intermediate</string>
+    <string name="shoulders_duration">⏱ Duration: 45 min</string>
+    <string name="shoulders_calories">🔥 Calories: ~240 kcal</string>
+
+    <string name="shoulders_ex1">🏋️ Shoulder Press</string>
+    <string name="shoulders_ex1_sets">4 Sets × 10 Reps</string>
+
+    <string name="shoulders_ex2">💪 Lateral Raises</string>
+    <string name="shoulders_ex2_sets">3 Sets × 12 Reps</string>
+
+    <string name="shoulders_ex3">🔥 Front Raises</string>
+    <string name="shoulders_ex3_sets">3 Sets × 12 Reps</string>
+
+    <string name="shoulders_ex4">🏋️ Rear Delt Fly</string>
+    <string name="shoulders_ex4_sets">3 Sets × 12 Reps</string>
+    <string name="legs_title">🦵 Legs Workout</string>
+    <string name="legs_difficulty">🏋️ Difficulty: Hard</string>
+    <string name="legs_duration">⏱ Duration: 55 min</string>
+    <string name="legs_calories">🔥 Calories: ~350 kcal</string>
+
+    <string name="legs_ex1">🦵 Squats</string>
+    <string name="legs_ex1_sets">4 Sets × 10 Reps</string>
+
+    <string name="legs_ex2">🦵 Leg Press</string>
+    <string name="legs_ex2_sets">3 Sets × 12 Reps</string>
+
+    <string name="legs_ex3">🔥 Lunges</string>
+    <string name="legs_ex3_sets">3 Sets × 12 Reps</string>
+
+    <string name="legs_ex4">🏋️ Calf Raises</string>
+    <string name="legs_ex4_sets">4 Sets × 15 Reps</string>
+
+    <string name="cardio_title">🏃 Cardio Workout</string>
+    <string name="cardio_difficulty">🏋️ Difficulty: Medium</string>
+    <string name="cardio_duration">⏱ Duration: 45 min</string>
+    <string name="cardio_calories">🔥 Calories: ~400 kcal</string>
+
+    <string name="cardio_ex1">🏃 Running</string>
+    <string name="cardio_ex1_sets">20 Minutes</string>
+
+    <string name="cardio_ex2">🚴 Cycling</string>
+    <string name="cardio_ex2_sets">15 Minutes</string>
+
+    <string name="cardio_ex3">🔥 Jump Rope</string>
+    <string name="cardio_ex3_sets">10 Minutes</string>
+
+    <string name="cardio_ex4">💪 Burpees</string>
+    <string name="cardio_ex4_sets">3 Sets × 15 Reps</string>
+
+    <string name="profile_title">👤 My Profile</string>
+    <string name="age_label">Age:</string>
+    <string name="weight_label">Weight:</string>
+    <string name="height_label">Height:</string>
+    <string name="bmi_label">BMI:</string>
+    <string name="edit_profile">✏️ Edit Profile</string>
+    <string name="arms_workout">💪 Arms Workout</string>
+    <string name="shoulders_workout">🏋️ Shoulders Workout</string>
+    <string name="legs_workout">🦵 Legs Workout</string>
+    <string name="register_title">Register</string>
+    <string name="register_button">Register</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="age_hint">Age</string>
+    <string name="weight_hint">Weight (kg)</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="save_profile">💾 Save</string>
+    <string name="google_login_failed">Google login failed</string>
+    <string name="fill_all_fields">Fill all fields</string>
+    <string name="guest_login_failed">Guest login failed</string>
+    <string name="account_created">Account created successfully!</string>
+    <string name="age_value">Age: %1$d</string>
+    <string name="weight_value">Weight: %1$.1f kg</string>
+    <string name="height_value">Height: %1$.1f cm</string>
+    <string name="bmi_value">BMI: %1$.1f</string>
+    <string name="profile_saved">Profile saved successfully</string>
+    <string name="recommended_bmi">📊 BMI: %1$.1f</string>
+    <string name="recommended_calories">🔥 Recommended Calories: %1$d kcal</string>
+    <string name="recommended_water">💧 Recommended Water: %1$s L</string>
+    <string name="recommended_workouts">🏋️ Recommended Workouts: %1$d per week</string>
 </resources>

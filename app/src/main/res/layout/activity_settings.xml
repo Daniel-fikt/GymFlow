@@ -1,45 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
 
+    ```
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/gymflow_logo"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⚙️ Settings"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:text="SETTINGS"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize Your Experience"
+            android:textColor="#FFC107"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🌐 Language"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:text="🌍 LANGUAGE"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="English" />
+                    android:text="@string/language_value"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
 
             </LinearLayout>
 
@@ -49,25 +74,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="16dp">
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🔔 Notifications"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:text="🔔 NOTIFICATIONS"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enabled" />
+                    android:text="@string/notifications_enabled"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
 
             </LinearLayout>
 
@@ -76,17 +108,24 @@
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🚪 Logout"
-            android:layout_marginTop="20dp" />
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"/>
 
         <Button
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="⬅️ Back"
-            android:layout_marginTop="12dp" />
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"/>
 
     </LinearLayout>
+    ```
 
 </ScrollView>

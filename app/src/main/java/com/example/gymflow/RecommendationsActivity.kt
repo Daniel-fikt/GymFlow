@@ -41,16 +41,16 @@ class RecommendationsActivity : AppCompatActivity() {
                 else -> 5
             }
 
-        bmiText.text = "📊 BMI: %.1f".format(bmi)
+        bmiText.text = getString(R.string.recommended_bmi, bmi)
 
         caloriesText.text =
-            "🔥 Препорачани калории: $calories kcal"
+            getString(R.string.recommended_calories, calories)
 
         waterText.text =
-            "💧 Препорачана вода: $water L"
+            getString(R.string.recommended_water, water)
 
         workoutsText.text =
-            "🏋️ Препорачани тренинзи: $workouts неделно"
+            getString(R.string.recommended_workouts, workouts)
 
         backButton.setOnClickListener {
             finish()

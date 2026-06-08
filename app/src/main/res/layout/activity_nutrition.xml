@@ -1,87 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
+
+    ```
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/gymflow_logo"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🥗 Исхрана"
+            android:text="NUTRITION"
+            android:textColor="#FFFFFF"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🍳 Појадок"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:layout_marginTop="24dp" />
+            android:text="Fuel Your Body"
+            android:textColor="#FFC107"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="• Овесни снегулки&#10;• Банана&#10;• Јогурт"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🍗 Ручек"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:layout_marginTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="• Пилешко месо&#10;• Ориз&#10;• Салата"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🍎 Ужина"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:layout_marginTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="• Јаболко&#10;• Бадеми"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🥩 Вечера"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:layout_marginTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="• Туна&#10;• Зеленчук"
-            android:textSize="18sp" />
-
-        <Space
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="#FFC107"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍳 BREAKFAST"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/breakfast_food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍗 LUNCH"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lunch_food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥜 SNACK"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/snack_food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥩 DINNER"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dinner_food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/imgMeal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:background="#1A1A1A"
+            android:scaleType="centerCrop"
+            android:contentDescription="Meal Photo" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="📷 TAKE PHOTO"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#FFC107"/>
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="☁ UPLOAD TO FIREBASE"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#FFD54F"/>
 
         <Button
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Назад" />
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"/>
 
     </LinearLayout>
+    ```
 
 </ScrollView>

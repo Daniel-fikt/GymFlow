@@ -36,10 +36,10 @@ class ProfileActivity : AppCompatActivity() {
                 0f
             }
 
-        txtAge.text = "Возраст: $age"
-        txtWeight.text = "Тежина: $weight kg"
-        txtHeight.text = "Висина: $height cm"
-        txtBmi.text = "BMI: %.1f".format(bmi)
+        txtAge.text = getString(R.string.age_value, age)
+        txtWeight.text = getString(R.string.weight_value, weight)
+        txtHeight.text = getString(R.string.height_value, height)
+        txtBmi.text = getString(R.string.bmi_value, bmi)
 
         editButton.setOnClickListener {
             startActivity(
